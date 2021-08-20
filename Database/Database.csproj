@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Database</AssemblyName>
+    <RootNamespace>Database</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ActionLibrary\ActionLibrary.csproj" />
+    <ProjectReference Include="..\ArmyLibrary\ArmyLibrary.csproj" />
+    <ProjectReference Include="..\FactionLibrary\FactionLibrary.csproj" />
+    <ProjectReference Include="..\UnitLibrary\UnitLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

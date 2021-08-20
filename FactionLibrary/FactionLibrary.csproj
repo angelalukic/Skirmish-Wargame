@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>FactionLibrary</AssemblyName>
+    <RootNamespace>FactionLibrary</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ObjectLibrary\ObjectLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
