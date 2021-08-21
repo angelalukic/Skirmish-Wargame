@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Data;
 using ObjectLibrary;
 
 namespace Database
@@ -20,8 +19,9 @@ namespace Database
             HashSet <IFaction> factions = InitializeFactions();
             HashSet<IArmy> armies = InitializeArmies(factions);
             HashSet<IUnit> units = InitializeUnits(armies);
+            HashSet<IAction> actions = InitializeActions(units);
 
-            return new SkirmishData(factions, armies, units, null);
+            return new SkirmishData(factions, armies, units, actions);
         }
     }
 }

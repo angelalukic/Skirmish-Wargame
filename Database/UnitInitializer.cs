@@ -28,7 +28,7 @@ namespace Database
                         // UnitID is a Primary Key, so this array will always contain one value
                         DataRow[] unit = unitData.Select("UnitID=" + unitId);
 
-                        IUnit initializedUnit = InitializeUnits(unit[0], army);
+                        IUnit initializedUnit = InitializeUnit(unit[0], army);
 
                         // There may be armies in the database which do not yet correspond to a class.
                         // Ignore these until they are implemented in code.
@@ -48,7 +48,7 @@ namespace Database
             army.AddUnit(unit);
         }
 
-        IUnit InitializeUnits(DataRow unitData, IArmy army)
+        IUnit InitializeUnit(DataRow unitData, IArmy army)
         {
             int id = Int32.Parse(unitData["UnitID"].ToString());
             string name = unitData["Name"].ToString();
@@ -63,7 +63,6 @@ namespace Database
                 default:
                     unit = null;
                     break;
-
                 case "Recruit":
                     unit = new RecruitUnit(id, name, health, move, cost, army);
                     AddUnitToArmy(army, unit);

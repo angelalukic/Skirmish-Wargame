@@ -27,11 +27,14 @@ namespace SkirmishGame
                     foreach (IUnit unit in army.GetUnits())
                     {
                         Console.WriteLine("\t\t" + unit.GetName());
+
+                        foreach (IAction action in unit.GetActions())
+                        {
+                            Console.WriteLine("\t\t\t" + action.GetName());
+                        }
                     }
                 }
-
             }
-
         }
     }
 }

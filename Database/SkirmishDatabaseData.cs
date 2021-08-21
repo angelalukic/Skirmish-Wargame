@@ -49,7 +49,6 @@ namespace Database
             try
             {
                 connection.Open();
-                Console.WriteLine("Connected");
                 adapter.Fill(data);
 
             }
@@ -60,7 +59,6 @@ namespace Database
             finally
             {
                 connection.Close();
-                Console.WriteLine("Closed");
             }
             return data;
         }
