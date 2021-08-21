@@ -1,5 +1,4 @@
 ﻿using ObjectLibrary;
-using System.Collections.Generic;
 
 namespace ActionLibrary
 {
@@ -178,6 +177,15 @@ namespace ActionLibrary
                 case "Fluid":
                     return new FluidAction(id, name, description, constant, range, unit);
             }
+        }
+
+        public override string ToString()
+        {
+            return "ID: " + this.Id +
+                ", Unit Name: " + this.Name +
+                // ",Description: " + this.Description +
+                ", Constant: " + this.Constant +
+                ", Range: " + this.Range;
         }
     }
 }

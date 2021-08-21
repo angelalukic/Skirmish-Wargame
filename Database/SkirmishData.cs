@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using ObjectLibrary;
 
 namespace Database
@@ -36,6 +37,32 @@ namespace Database
         public HashSet<IAction> GetActions()
         {
             return actions;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder str = new();
+            str.Append("Factions:\n");
+            foreach(IFaction faction in this.factions)
+            {
+                str.Append(faction + "\n");
+                str.Append("\tArmies:\n");
+                foreach(IArmy army in faction.Armies)
+                {
+                    str.Append("\t" + army + "\n");
+                    str.Append("\t\tUnits:\n");
+                    foreach(IUnit unit in army.Units)
+                    {
+                        str.Append("\t\t" + unit + "\n");
+                        str.Append("\t\t\tActions:\n");
+                        foreach(IAction action in unit.Actions)
+                        {
+                            str.Append("\t\t\t" + action + "\n");
+                        }
+                    }
+                }
+            }
+            return str.ToString();
         }
     }
 }

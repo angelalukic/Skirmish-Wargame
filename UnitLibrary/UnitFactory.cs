@@ -116,5 +116,14 @@ namespace UnitLibrary
         {
             Actions.Remove(action);
         }
+
+        public override string ToString()
+        {
+            return "ID: " + this.Id +
+                ", Unit Name: " + this.Name +
+                ", Base Health: " + this.BaseHealth +
+                ", Base Move: " + this.BaseMove +
+                ", Cost: " + this.Cost;
+        }
     }
 }

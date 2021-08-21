@@ -58,5 +58,12 @@ namespace ArmyLibrary
         {
             Units.Remove(unit);
         }
+
+        public override string ToString()
+        {
+            return "ID: " + this.Id +
+                ", Army Name: " + this.Name +
+                ", Contributor: " + this.Contributor;
+        }
     }
 }

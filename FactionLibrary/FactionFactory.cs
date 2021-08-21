@@ -38,5 +38,12 @@ namespace FactionLibrary
         {
             Armies.Remove(army);
         }
+
+        public override string ToString()
+        {
+            return "ID: " + this.Id +
+                ", Faction Name: " + this.Name;
+
+        }
     }
 }
