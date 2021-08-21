@@ -11,7 +11,7 @@ namespace ArmyLibrary
         public IFaction Faction { get; }
         public HashSet<IUnit> Units { get; }
 
-        public ArmyFactory(int id, string name, string contributor, IFaction faction)
+        protected ArmyFactory(int id, string name, string contributor, IFaction faction)
         {
             this.Id = id;
             this.Name = name;

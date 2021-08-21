@@ -30,7 +30,7 @@ namespace SkirmishGame
 
                         foreach (IAction action in unit.GetActions())
                         {
-                            Console.WriteLine("\t\t\t" + action.GetName());
+                            Console.WriteLine("\t\t\t" + action.Name);
                         }
                     }
                 }

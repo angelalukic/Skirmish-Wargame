@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using ActionLibrary;
 using ArmyLibrary;
 using FactionLibrary;
 using ObjectLibrary;
@@ -75,6 +76,45 @@ namespace Database
                 }
             }
             return armies;
+        }
+
+        HashSet<IAction> InitializeActions(HashSet<IUnit> units)
+        {
+            DataTable actionData = databaseData.GetActionData();
+            DataTable unitActionsData = databaseData.GetUnitActionsData();
+            HashSet<IAction> actions = new();
+
+            foreach (DataRow row in unitActionsData.Rows)
+            {
+                int unitId = Int32.Parse(row["UnitID"].ToString());
+                int actionId = Int32.Parse(row["ActionID"].ToString());
+
+                foreach (IUnit unit in units)
+                {
+                    if (unit.GetId() == unitId)
+                    {
+                        // ActionID is a Primary Key, so this array will always contain one value
+                        DataRow action = actionData.Select("ActionID=" + actionId)[0];
+
+                        int id = Int32.Parse(action["ActionID"].ToString());
+                        string name = action["Name"].ToString();
+                        string description = action["Description"].ToString();
+                        bool constant = Convert.ToBoolean(Int32.Parse(action["Constant"].ToString()));
+                        int range = Int32.Parse(action["Range"].ToString());
+
+                        IAction initializedAction = ActionFactory.GetInstance(id, name, description, constant, range, unit);
+
+                        // There may be armies in the database which do not yet correspond to a class.
+                        // Ignore these until they are implemented in code.
+                        if (initializedAction != null)
+                        {
+                            actions.Add(initializedAction);
+                            unit.AddAction(initializedAction);
+                        }
+                    }
+                }
+            }
+            return actions;
         }
     }
 }

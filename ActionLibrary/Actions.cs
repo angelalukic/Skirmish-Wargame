@@ -3,7 +3,7 @@
 // All classes representing actions with no special behavior are defined in this file
 namespace ActionLibrary
 {
-    public class TruncheonsOutAction : AbstractAction
+    public class TruncheonsOutAction : ActionFactory
     {
         public TruncheonsOutAction(int id, string name, string description, bool constant, int range, IUnit unit): base(id, name, description, constant, range, unit)
         {
@@ -11,7 +11,7 @@ namespace ActionLibrary
         }
     }
 
-    public class TrippingStrikeAction : AbstractAction
+    public class TrippingStrikeAction : ActionFactory
     {
         public TrippingStrikeAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -19,7 +19,7 @@ namespace ActionLibrary
         }
     }
 
-    public class OpportunistAction : AbstractAction
+    public class OpportunistAction : ActionFactory
     {
         public OpportunistAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -27,7 +27,7 @@ namespace ActionLibrary
         }
     }
 
-    public class WeatheredBladeAction : AbstractAction
+    public class WeatheredBladeAction : ActionFactory
     {
         public WeatheredBladeAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -35,7 +35,7 @@ namespace ActionLibrary
         }
     }
 
-    public class YoureComingWithMeAction : AbstractAction
+    public class YoureComingWithMeAction : ActionFactory
     {
         public YoureComingWithMeAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -43,7 +43,7 @@ namespace ActionLibrary
         }
     }
 
-    public class ApprehendAction : AbstractAction
+    public class ApprehendAction : ActionFactory
     {
         public ApprehendAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -51,7 +51,7 @@ namespace ActionLibrary
         }
     }
 
-    public class MobEmDownAction : AbstractAction
+    public class MobEmDownAction : ActionFactory
     {
         public MobEmDownAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -59,7 +59,7 @@ namespace ActionLibrary
         }
     }
 
-    public class ReveilleAction : AbstractAction
+    public class ReveilleAction : ActionFactory
     {
         public ReveilleAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -67,7 +67,7 @@ namespace ActionLibrary
         }
     }
 
-    public class ImperialOversightAction : AbstractAction
+    public class ImperialOversightAction : ActionFactory
     {
         public ImperialOversightAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -75,7 +75,7 @@ namespace ActionLibrary
         }
     }
 
-    public class LanceStrikeAction : AbstractAction
+    public class LanceStrikeAction : ActionFactory
     {
         public LanceStrikeAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -83,7 +83,7 @@ namespace ActionLibrary
         }
     }
 
-    public class WildKickAction : AbstractAction
+    public class WildKickAction : ActionFactory
     {
         public WildKickAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -91,7 +91,7 @@ namespace ActionLibrary
         }
     }
 
-    public class TrampleAction : AbstractAction
+    public class TrampleAction : ActionFactory
     {
         public TrampleAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -99,7 +99,7 @@ namespace ActionLibrary
         }
     }
 
-    public class MountAction : AbstractAction
+    public class MountAction : ActionFactory
     {
         public MountAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -107,7 +107,7 @@ namespace ActionLibrary
         }
     }
 
-    public class StraightShotAction : AbstractAction
+    public class StraightShotAction : ActionFactory
     {
         public StraightShotAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -115,7 +115,7 @@ namespace ActionLibrary
         }
     }
 
-    public class VolleyFireAction : AbstractAction
+    public class VolleyFireAction : ActionFactory
     {
         public VolleyFireAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -123,7 +123,7 @@ namespace ActionLibrary
         }
     }
 
-    public class ClimbAction : AbstractAction
+    public class ClimbAction : ActionFactory
     {
         public ClimbAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -131,7 +131,7 @@ namespace ActionLibrary
         }
     }
 
-    public class SuddenStabAction : AbstractAction
+    public class SuddenStabAction : ActionFactory
     {
         public SuddenStabAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -139,7 +139,7 @@ namespace ActionLibrary
         }
     }
 
-    public class LeapingBladeAction : AbstractAction
+    public class LeapingBladeAction : ActionFactory
     {
         public LeapingBladeAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -147,7 +147,7 @@ namespace ActionLibrary
         }
     }
 
-    public class FoolsGambitAction : AbstractAction
+    public class FoolsGambitAction : ActionFactory
     {
         public FoolsGambitAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -155,7 +155,7 @@ namespace ActionLibrary
         }
     }
 
-    public class ParrydanceAction : AbstractAction
+    public class ParrydanceAction : ActionFactory
     {
         public ParrydanceAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -163,7 +163,7 @@ namespace ActionLibrary
         }
     }
 
-    public class ShieldSongAction : AbstractAction
+    public class ShieldSongAction : ActionFactory
     {
         public ShieldSongAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -171,7 +171,7 @@ namespace ActionLibrary
         }
     }
 
-    public class HarmonysBladeAction : AbstractAction
+    public class HarmonysBladeAction : ActionFactory
     {
         public HarmonysBladeAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -179,7 +179,7 @@ namespace ActionLibrary
         }
     }
 
-    public class WhirlOfLoveAction : AbstractAction
+    public class WhirlOfLoveAction : ActionFactory
     {
         public WhirlOfLoveAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -187,7 +187,7 @@ namespace ActionLibrary
         }
     }
 
-    public class PassionsBladeAction : AbstractAction
+    public class PassionsBladeAction : ActionFactory
     {
         public PassionsBladeAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -195,7 +195,7 @@ namespace ActionLibrary
         }
     }
 
-    public class DualStrikeAction : AbstractAction
+    public class DualStrikeAction : ActionFactory
     {
         public DualStrikeAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -203,7 +203,7 @@ namespace ActionLibrary
         }
     }
 
-    public class LoversShriekAction : AbstractAction
+    public class LoversShriekAction : ActionFactory
     {
         public LoversShriekAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -211,7 +211,7 @@ namespace ActionLibrary
         }
     }
 
-    public class HysteriaAction : AbstractAction
+    public class HysteriaAction : ActionFactory
     {
         public HysteriaAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -219,7 +219,7 @@ namespace ActionLibrary
         }
     }
 
-    public class PowerSourceAction : AbstractAction
+    public class PowerSourceAction : ActionFactory
     {
         public PowerSourceAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -227,7 +227,7 @@ namespace ActionLibrary
         }
     }
 
-    public class LumberingBeastAction : AbstractAction
+    public class LumberingBeastAction : ActionFactory
     {
         public LumberingBeastAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -235,7 +235,7 @@ namespace ActionLibrary
         }
     }
 
-    public class TankShockAction : AbstractAction
+    public class TankShockAction : ActionFactory
     {
         public TankShockAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -243,7 +243,7 @@ namespace ActionLibrary
         }
     }
 
-    public class RepairAction : AbstractAction
+    public class RepairAction : ActionFactory
     {
         public RepairAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -251,7 +251,7 @@ namespace ActionLibrary
         }
     }
 
-    public class HydraulicPowerAction : AbstractAction
+    public class HydraulicPowerAction : ActionFactory
     {
         public HydraulicPowerAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -259,7 +259,7 @@ namespace ActionLibrary
         }
     }
 
-    public class StrafingShotsAction : AbstractAction
+    public class StrafingShotsAction : ActionFactory
     {
         public StrafingShotsAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -267,7 +267,7 @@ namespace ActionLibrary
         }
     }
 
-    public class FocusedFireAction : AbstractAction
+    public class FocusedFireAction : ActionFactory
     {
         public FocusedFireAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -275,7 +275,7 @@ namespace ActionLibrary
         }
     }
 
-    public class BunkerBreakerAction : AbstractAction
+    public class BunkerBreakerAction : ActionFactory
     {
         public BunkerBreakerAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -283,7 +283,7 @@ namespace ActionLibrary
         }
     }
 
-    public class ThickMetalAction : AbstractAction
+    public class ThickMetalAction : ActionFactory
     {
         public ThickMetalAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -291,7 +291,7 @@ namespace ActionLibrary
         }
     }
 
-    public class ShineAction : AbstractAction
+    public class ShineAction : ActionFactory
     {
         public ShineAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -299,7 +299,7 @@ namespace ActionLibrary
         }
     }
 
-    public class CracklemaceAction : AbstractAction
+    public class CracklemaceAction : ActionFactory
     {
         public CracklemaceAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -307,7 +307,7 @@ namespace ActionLibrary
         }
     }
 
-    public class MindsnareShieldAction : AbstractAction
+    public class MindsnareShieldAction : ActionFactory
     {
         public MindsnareShieldAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -315,7 +315,7 @@ namespace ActionLibrary
         }
     }
 
-    public class StandFirmAction : AbstractAction
+    public class StandFirmAction : ActionFactory
     {
         public StandFirmAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -323,7 +323,7 @@ namespace ActionLibrary
         }
     }
 
-    public class PhaseHalberdAction : AbstractAction
+    public class PhaseHalberdAction : ActionFactory
     {
         public PhaseHalberdAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -331,7 +331,7 @@ namespace ActionLibrary
         }
     }
 
-    public class SpiritcutterAction : AbstractAction
+    public class SpiritcutterAction : ActionFactory
     {
         public SpiritcutterAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -339,7 +339,7 @@ namespace ActionLibrary
         }
     }
 
-    public class BattleshaperHelmAction : AbstractAction
+    public class BattleshaperHelmAction : ActionFactory
     {
         public BattleshaperHelmAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -347,7 +347,7 @@ namespace ActionLibrary
         }
     }
 
-    public class GleamingAegisAction : AbstractAction
+    public class GleamingAegisAction : ActionFactory
     {
         public GleamingAegisAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -355,7 +355,7 @@ namespace ActionLibrary
         }
     }
 
-    public class MagicDartsAction : AbstractAction
+    public class MagicDartsAction : ActionFactory
     {
         public MagicDartsAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -363,7 +363,7 @@ namespace ActionLibrary
         }
     }
 
-    public class SpellOfForgettingAction : AbstractAction
+    public class SpellOfForgettingAction : ActionFactory
     {
         public SpellOfForgettingAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -371,7 +371,7 @@ namespace ActionLibrary
         }
     }
 
-    public class MagicBoltsAction : AbstractAction
+    public class MagicBoltsAction : ActionFactory
     {
         public MagicBoltsAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -379,7 +379,7 @@ namespace ActionLibrary
         }
     }
 
-    public class SealedShatteringAction : AbstractAction
+    public class SealedShatteringAction : ActionFactory
     {
         public SealedShatteringAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -387,7 +387,7 @@ namespace ActionLibrary
         }
     }
 
-    public class MagicStormAction : AbstractAction
+    public class MagicStormAction : ActionFactory
     {
         public MagicStormAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -395,7 +395,7 @@ namespace ActionLibrary
         }
     }
 
-    public class FollowMyLeadAction : AbstractAction
+    public class FollowMyLeadAction : ActionFactory
     {
         public FollowMyLeadAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -403,7 +403,7 @@ namespace ActionLibrary
         }
     }
 
-    public class SuggestionAction : AbstractAction
+    public class SuggestionAction : ActionFactory
     {
         public SuggestionAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -411,7 +411,7 @@ namespace ActionLibrary
         }
     }
 
-    public class WarpTheWallsAction : AbstractAction
+    public class WarpTheWallsAction : ActionFactory
     {
         public WarpTheWallsAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -419,7 +419,7 @@ namespace ActionLibrary
         }
     }
 
-    public class WildHeartAction : AbstractAction
+    public class WildHeartAction : ActionFactory
     {
         public WildHeartAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -427,7 +427,7 @@ namespace ActionLibrary
         }
     }
 
-    public class GeomancyAction : AbstractAction
+    public class GeomancyAction : ActionFactory
     {
         public GeomancyAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -435,7 +435,7 @@ namespace ActionLibrary
         }
     }
 
-    public class DrubAction : AbstractAction
+    public class DrubAction : ActionFactory
     {
         public DrubAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -443,7 +443,7 @@ namespace ActionLibrary
         }
     }
 
-    public class MaulAction : AbstractAction
+    public class MaulAction : ActionFactory
     {
         public MaulAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -451,7 +451,7 @@ namespace ActionLibrary
         }
     }
 
-    public class PounceAction : AbstractAction
+    public class PounceAction : ActionFactory
     {
         public PounceAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -459,7 +459,7 @@ namespace ActionLibrary
         }
     }
 
-    public class EviscerateAction : AbstractAction
+    public class EviscerateAction : ActionFactory
     {
         public EviscerateAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -467,7 +467,7 @@ namespace ActionLibrary
         }
     }
 
-    public class DigAction : AbstractAction
+    public class DigAction : ActionFactory
     {
         public DigAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -475,7 +475,7 @@ namespace ActionLibrary
         }
     }
 
-    public class AdvanceCarefullyAction : AbstractAction
+    public class AdvanceCarefullyAction : ActionFactory
     {
         public AdvanceCarefullyAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -483,7 +483,7 @@ namespace ActionLibrary
         }
     }
 
-    public class SquashAction : AbstractAction
+    public class SquashAction : ActionFactory
     {
         public SquashAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -491,7 +491,7 @@ namespace ActionLibrary
         }
     }
 
-    public class FireballAction : AbstractAction
+    public class FireballAction : ActionFactory
     {
         public FireballAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -499,7 +499,7 @@ namespace ActionLibrary
         }
     }
 
-    public class ConsumingPassionAction : AbstractAction
+    public class ConsumingPassionAction : ActionFactory
     {
         public ConsumingPassionAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -507,7 +507,7 @@ namespace ActionLibrary
         }
     }
 
-    public class SplashfireAction : AbstractAction
+    public class SplashfireAction : ActionFactory
     {
         public SplashfireAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -515,7 +515,7 @@ namespace ActionLibrary
         }
     }
 
-    public class SunderAction : AbstractAction
+    public class SunderAction : ActionFactory
     {
         public SunderAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -523,7 +523,7 @@ namespace ActionLibrary
         }
     }
 
-    public class HymnOfMarbleAction : AbstractAction
+    public class HymnOfMarbleAction : ActionFactory
     {
         public HymnOfMarbleAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -531,7 +531,7 @@ namespace ActionLibrary
         }
     }
 
-    public class SculptAction : AbstractAction
+    public class SculptAction : ActionFactory
     {
         public SculptAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -539,7 +539,7 @@ namespace ActionLibrary
         }
     }
 
-    public class StoneDaggerAction : AbstractAction
+    public class StoneDaggerAction : ActionFactory
     {
         public StoneDaggerAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -547,7 +547,7 @@ namespace ActionLibrary
         }
     }
 
-    public class SomersaultAction : AbstractAction
+    public class SomersaultAction : ActionFactory
     {
         public SomersaultAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -555,7 +555,7 @@ namespace ActionLibrary
         }
     }
 
-    public class CrushingFistsAction : AbstractAction
+    public class CrushingFistsAction : ActionFactory
     {
         public CrushingFistsAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -563,7 +563,7 @@ namespace ActionLibrary
         }
     }
 
-    public class MeltingWillAction : AbstractAction
+    public class MeltingWillAction : ActionFactory
     {
         public MeltingWillAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -571,7 +571,7 @@ namespace ActionLibrary
         }
     }
 
-    public class BladedFanAction : AbstractAction
+    public class BladedFanAction : ActionFactory
     {
         public BladedFanAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -579,7 +579,7 @@ namespace ActionLibrary
         }
     }
 
-    public class CrookedHeelAction : AbstractAction
+    public class CrookedHeelAction : ActionFactory
     {
         public CrookedHeelAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {
@@ -587,7 +587,7 @@ namespace ActionLibrary
         }
     }
 
-    public class FluidAction : AbstractAction
+    public class FluidAction : ActionFactory
     {
         public FluidAction(int id, string name, string description, bool constant, int range, IUnit unit) : base(id, name, description, constant, range, unit)
         {

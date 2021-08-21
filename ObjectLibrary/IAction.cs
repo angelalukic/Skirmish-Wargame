@@ -4,11 +4,11 @@ namespace ObjectLibrary
 {
     public interface IAction
     {
-        int GetId();
-        string GetName();
-        string GetDescription();
-        bool GetConstant();
-        int GetRange();
-        IUnit GetUnit();
+        int Id { get; }
+        string Name { get; }
+        string Description { get; }
+        bool Constant { get; }
+        int Range { get; }
+        IUnit Unit { get; }
     }
 }
