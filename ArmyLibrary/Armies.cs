@@ -3,73 +3,73 @@
 // All classes representing armies with no special behavior are defined in this file
 namespace ArmyLibrary
 {
-    public class AllianceHeartswornArmy : AbstractArmy
+    public class AllianceHeartswornArmy : ArmyFactory
     {
-        public AllianceHeartswornArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
+        internal AllianceHeartswornArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
         {
 
         }
     }
 
-    public class AmberAdeptsArmy : AbstractArmy
+    public class AmberAdeptsArmy : ArmyFactory
     {
-        public AmberAdeptsArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
+        internal AmberAdeptsArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
         {
 
         }
     }
 
-    public class ArcadiaAcademyArmy : AbstractArmy
+    public class ArcadiaAcademyArmy : ArmyFactory
     {
-        public ArcadiaAcademyArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
+        internal ArcadiaAcademyArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
         {
 
         }
     }
 
-    public class CordelianTroupeArmy : AbstractArmy
+    public class CordelianTroupeArmy : ArmyFactory
     {
-        public CordelianTroupeArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
+        internal CordelianTroupeArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
         {
 
         }
     }
 
-    public class FoliumGardianiArmy : AbstractArmy
+    public class FoliumGardianiArmy : ArmyFactory
     {
-        public FoliumGardianiArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
+        internal FoliumGardianiArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
         {
 
         }
     }
 
-    public class HonywoodBattalionArmy : AbstractArmy
+    public class HonywoodBattalionArmy : ArmyFactory
     {
-        public HonywoodBattalionArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
+        internal HonywoodBattalionArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
         {
 
         }
     }
 
-    public class MarbleAssassinsArmy : AbstractArmy
+    public class MarbleAssassinsArmy : ArmyFactory
     {
-        public MarbleAssassinsArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
+        internal MarbleAssassinsArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
         {
 
         }
     }
 
-    public class MaritalKnightsArmy : AbstractArmy
+    public class MaritalKnightsArmy : ArmyFactory
     {
-        public MaritalKnightsArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
+        internal MaritalKnightsArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
         {
 
         }
     }
 
-    public class MordauntFirstRegimentArmy : AbstractArmy
+    public class MordauntFirstRegimentArmy : ArmyFactory
     {
-        public MordauntFirstRegimentArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
+        internal MordauntFirstRegimentArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
         {
 
         }

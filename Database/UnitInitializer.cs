@@ -23,7 +23,7 @@ namespace Database
 
                 foreach (IArmy army in armies)
                 {
-                    if (army.GetId() == armyId)
+                    if (army.Id == armyId)
                     {
                         // UnitID is a Primary Key, so this array will always contain one value
                         DataRow[] unit = unitData.Select("UnitID=" + unitId);

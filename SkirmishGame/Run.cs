@@ -22,9 +22,9 @@ namespace SkirmishGame
 
                 foreach (IArmy army in faction.Armies)
                 {
-                    Console.WriteLine("\t" + army.GetName());
+                    Console.WriteLine("\t" + army.Name);
 
-                    foreach (IUnit unit in army.GetUnits())
+                    foreach (IUnit unit in army.Units)
                     {
                         Console.WriteLine("\t\t" + unit.GetName());
 

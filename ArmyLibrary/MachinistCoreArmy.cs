@@ -2,9 +2,9 @@
 
 namespace ArmyLibrary
 {
-    public class MachinistCoreArmy : AbstractArmy
+    public class MachinistCoreArmy : ArmyFactory
     {
-        public MachinistCoreArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
+        internal MachinistCoreArmy(int id, string name, string contributor, IFaction faction) : base(id, name, contributor, faction)
         {
             
         }
