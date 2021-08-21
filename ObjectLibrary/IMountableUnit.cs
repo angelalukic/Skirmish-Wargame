@@ -8,8 +8,8 @@ namespace ObjectLibrary
 {
     public interface IMountableUnit
     {
+        IUnit MountedUnit { get; }
         void Mount(IUnit unit);
         void Unmount();
-        IUnit GetMountedUnit(); 
     }
 }

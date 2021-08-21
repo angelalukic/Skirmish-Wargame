@@ -1,30 +1,24 @@
 ﻿using ObjectLibrary;
-using System.Collections.Generic;
 
 namespace UnitLibrary
 {
-    public class AbstractMountableUnit : AbstractUnit, IMountableUnit
+    public class AbstractMountableUnit : UnitFactory, IMountableUnit
     {
-        private IUnit unit; 
+        public IUnit MountedUnit { get; private set; }
         
-        public AbstractMountableUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal AbstractMountableUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
 
         public void Mount(IUnit unit)
         {
-           this.unit = unit;
+           this.MountedUnit = unit;
         }
 
         public void Unmount()
         {
-            this.unit = null;
-        }
-
-        public IUnit GetMountedUnit()
-        {
-            return unit;
+            this.MountedUnit = null;
         }
     }
 }

@@ -4,41 +4,41 @@ using ObjectLibrary;
 // All classes representing units with no special behavior are defined in this file
 namespace UnitLibrary
 {
-    public class RecruitUnit : AbstractUnit
+    public class RecruitUnit : UnitFactory
     {
-        public RecruitUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal RecruitUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class FieldOfficerUnit : AbstractUnit
+    public class FieldOfficerUnit : UnitFactory
     {
-        public FieldOfficerUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal FieldOfficerUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class RegimentalCaptainUnit : AbstractUnit
+    public class RegimentalCaptainUnit : UnitFactory
     {
-        public RegimentalCaptainUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal RegimentalCaptainUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class FlagBearerUnit : AbstractUnit
+    public class FlagBearerUnit : UnitFactory
     {
-        public FlagBearerUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal FlagBearerUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class CavalryRiderUnit : AbstractUnit
+    public class CavalryRiderUnit : UnitFactory
     {
-        public CavalryRiderUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal CavalryRiderUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
@@ -46,63 +46,63 @@ namespace UnitLibrary
 
     public class DusthorseUnit : AbstractMountableUnit
     {
-        public DusthorseUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal DusthorseUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class DistantPoetUnit : AbstractUnit
+    public class DistantPoetUnit : UnitFactory
     {
-        public DistantPoetUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal DistantPoetUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class SubtleBladeUnit : AbstractUnit
+    public class SubtleBladeUnit : UnitFactory
     {
-        public SubtleBladeUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal SubtleBladeUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class JesterUnit : AbstractUnit
+    public class JesterUnit : UnitFactory
     {
-        public JesterUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal JesterUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class PragmaUnit : AbstractUnit
+    public class PragmaUnit : UnitFactory
     {
-        public PragmaUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal PragmaUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class PhiliaUnit : AbstractUnit
+    public class PhiliaUnit : UnitFactory
     {
-        public PhiliaUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal PhiliaUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class ErosUnit : AbstractUnit
+    public class ErosUnit : UnitFactory
     {
-        public ErosUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal ErosUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class ManiaUnit : AbstractUnit
+    public class ManiaUnit : UnitFactory
     {
-        public ManiaUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal ManiaUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
@@ -110,7 +110,7 @@ namespace UnitLibrary
 
     public class EngineeringHardpointUnit : AbstractModuleUnit
     {
-        public EngineeringHardpointUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal EngineeringHardpointUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
@@ -118,7 +118,7 @@ namespace UnitLibrary
 
     public class MotivatorDrivesUnit : AbstractModuleUnit
     {
-        public MotivatorDrivesUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal MotivatorDrivesUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
@@ -126,7 +126,7 @@ namespace UnitLibrary
 
     public class ArquebusArrayUnit : AbstractModuleUnit
     {
-        public ArquebusArrayUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal ArquebusArrayUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
@@ -134,7 +134,7 @@ namespace UnitLibrary
 
     public class HeavyCaliverUnit : AbstractModuleUnit
     {
-        public HeavyCaliverUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal HeavyCaliverUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
@@ -142,151 +142,151 @@ namespace UnitLibrary
 
     public class WroughtIronSlabsUnit : AbstractModuleUnit
     {
-        public WroughtIronSlabsUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal WroughtIronSlabsUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class TemperanceUnit : AbstractUnit
+    public class TemperanceUnit : UnitFactory
     {
-        public TemperanceUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal TemperanceUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class FortitudeUnit : AbstractUnit
+    public class FortitudeUnit : UnitFactory
     {
-        public FortitudeUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal FortitudeUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class JusticeUnit : AbstractUnit
+    public class JusticeUnit : UnitFactory
     {
-        public JusticeUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal JusticeUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class PrudenceUnit : AbstractUnit
+    public class PrudenceUnit : UnitFactory
     {
-        public PrudenceUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal PrudenceUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class StudentUnit : AbstractUnit
+    public class StudentUnit : UnitFactory
     {
-        public StudentUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal StudentUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class PrefectUnit : AbstractUnit
+    public class PrefectUnit : UnitFactory
     {
-        public PrefectUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal PrefectUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class ProfessorUnit : AbstractUnit
+    public class ProfessorUnit : UnitFactory
     {
-        public ProfessorUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal ProfessorUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class HallWardenUnit : AbstractUnit
+    public class HallWardenUnit : UnitFactory
     {
-        public HallWardenUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal HallWardenUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class DruidOfTheFoliumUnit : AbstractUnit
+    public class DruidOfTheFoliumUnit : UnitFactory
     {
-        public DruidOfTheFoliumUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal DruidOfTheFoliumUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class StalkingJaguarUnit : AbstractUnit
+    public class StalkingJaguarUnit : UnitFactory
     {
-        public StalkingJaguarUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal StalkingJaguarUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class DireWeaselUnit : AbstractUnit
+    public class DireWeaselUnit : UnitFactory
     {
-        public DireWeaselUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal DireWeaselUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class GrandTortoiseUnit : AbstractUnit
+    public class GrandTortoiseUnit : UnitFactory
     {
-        public GrandTortoiseUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal GrandTortoiseUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class LanternUnit : AbstractUnit
+    public class LanternUnit : UnitFactory
     {
-        public LanternUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal LanternUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class TorchUnit : AbstractUnit
+    public class TorchUnit : UnitFactory
     {
-        public TorchUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal TorchUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class OratorUnit : AbstractUnit
+    public class OratorUnit : UnitFactory
     {
-        public OratorUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal OratorUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class PatricianUnit : AbstractUnit
+    public class PatricianUnit : UnitFactory
     {
-        public PatricianUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal PatricianUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class BathWardenUnit : AbstractUnit
+    public class BathWardenUnit : UnitFactory
     {
-        public BathWardenUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal BathWardenUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
     }
 
-    public class VeilUnit : AbstractUnit
+    public class VeilUnit : UnitFactory
     {
-        public VeilUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal VeilUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }

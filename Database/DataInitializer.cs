@@ -5,6 +5,7 @@ using ActionLibrary;
 using ArmyLibrary;
 using FactionLibrary;
 using ObjectLibrary;
+using UnitLibrary;
 
 namespace Database
 {
@@ -78,6 +79,46 @@ namespace Database
             return armies;
         }
 
+        HashSet<IUnit> InitializeUnits(HashSet<IArmy> armies)
+        {
+            DataTable unitData = databaseData.GetUnitData();
+            DataTable armyUnitsData = databaseData.GetArmyUnitsData();
+            HashSet<IUnit> units = new();
+
+            foreach (DataRow row in armyUnitsData.Rows)
+            {
+                int armyId = Int32.Parse(row["ArmyID"].ToString());
+                int unitId = Int32.Parse(row["UnitID"].ToString());
+
+                foreach (IArmy army in armies)
+                {
+                    if (army.Id == armyId)
+                    {
+                        // UnitID is a Primary Key, so this array will always contain one value
+                        DataRow unit = unitData.Select("UnitID=" + unitId)[0];
+
+                        int id = Int32.Parse(unit["UnitID"].ToString());
+                        string name = unit["Name"].ToString();
+                        int health = Int32.Parse(unit["Health"].ToString());
+                        int move = Int32.Parse(unit["Move"].ToString());
+                        int cost = Int32.Parse(unit["Cost"].ToString());
+
+                        IUnit initializedUnit = UnitFactory.GetInstance(id, name, health, move, cost, army);
+
+                        // There may be armies in the database which do not yet correspond to a class.
+                        // Ignore these until they are implemented in code.
+                        if (initializedUnit != null)
+                        {
+                            units.Add(initializedUnit);
+                            army.AddUnit(initializedUnit);
+                        }
+
+                    }
+                }
+            }
+            return units;
+        }
+
         HashSet<IAction> InitializeActions(HashSet<IUnit> units)
         {
             DataTable actionData = databaseData.GetActionData();
@@ -91,7 +132,7 @@ namespace Database
 
                 foreach (IUnit unit in units)
                 {
-                    if (unit.GetId() == unitId)
+                    if (unit.Id == unitId)
                     {
                         // ActionID is a Primary Key, so this array will always contain one value
                         DataRow action = actionData.Select("ActionID=" + actionId)[0];

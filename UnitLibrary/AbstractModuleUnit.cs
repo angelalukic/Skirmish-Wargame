@@ -1,30 +1,24 @@
 ﻿using ObjectLibrary;
-using System.Collections.Generic;
 
 namespace UnitLibrary
 {
-    public class AbstractModuleUnit : AbstractUnit, IModuleUnit
+    public class AbstractModuleUnit : UnitFactory, IModuleUnit
     {
-        private IUnit unit;
+        public IUnit HostUnit { get; private set; }
 
-        public AbstractModuleUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
+        internal AbstractModuleUnit(int id, string name, int health, int move, int cost, IArmy army) : base(id, name, health, move, cost, army)
         {
 
         }
 
         public void Add(IUnit unit)
         {
-            this.unit = unit;
+            this.HostUnit = unit;
         }
 
         public void Remove()
         {
-            this.unit = null;
-        }
-
-        public IUnit GetHostUnit()
-        {
-            return unit;
+            this.HostUnit = null;
         }
     }
 }
