@@ -22,7 +22,7 @@ namespace Database
 
                 foreach (IFaction faction in factions)
                 {
-                    if (faction.GetId() == factionId)
+                    if (faction.Id == factionId)
                     {
                         // ArmyID is a Primary Key, so this array will always contain one value
                         DataRow[] army = armyData.Select("ArmyID=" + armyId);

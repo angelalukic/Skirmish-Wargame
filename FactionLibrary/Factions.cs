@@ -4,17 +4,17 @@ using ObjectLibrary;
 // All classes representing factions with no special behavior are defined in this file
 namespace FactionLibrary
 {
-    public class MordauntEmpireFaction : AbstractFaction
+    class MordauntEmpireFaction : FactionFactory
     {
-        public MordauntEmpireFaction(int id, string name) : base(id, name)
+        internal MordauntEmpireFaction(int id, string name) : base(id, name)
         {
 
         }
     }
 
-    public class VentrasseAllianceFaction : AbstractFaction
+    class VentrasseAllianceFaction : FactionFactory
     {
-        public VentrasseAllianceFaction(int id, string name) : base(id, name)
+        internal VentrasseAllianceFaction(int id, string name) : base(id, name)
         {
 
         }

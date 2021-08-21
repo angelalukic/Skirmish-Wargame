@@ -4,9 +4,9 @@ namespace ObjectLibrary
 {
     public interface IFaction
     {
-        int GetId();
-        string GetName();
-        HashSet<IArmy> GetArmies();
+        int Id { get; }
+        string Name { get; }
+        HashSet<IArmy> Armies { get; }
         void AddArmy(IArmy army);
         void RemoveArmy(IArmy army);
     }

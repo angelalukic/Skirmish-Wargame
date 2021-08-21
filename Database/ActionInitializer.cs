@@ -29,6 +29,13 @@ namespace Database
                         DataRow[] action = actionData.Select("ActionID=" + actionId);
 
                         IAction initializedAction = InitializeAction(action[0], unit);
+
+                        // There may be armies in the database which do not yet correspond to a class.
+                        // Ignore these until they are implemented in code.
+                        if (initializedAction != null)
+                        {
+                            actions.Add(initializedAction);
+                        }
                     }
                 }
             }

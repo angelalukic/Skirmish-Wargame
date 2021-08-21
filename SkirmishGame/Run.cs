@@ -18,9 +18,9 @@ namespace SkirmishGame
 
             foreach (IFaction faction in factions)
             {
-                Console.WriteLine(faction.GetName());
+                Console.WriteLine(faction.Name);
 
-                foreach (IArmy army in faction.GetArmies())
+                foreach (IArmy army in faction.Armies)
                 {
                     Console.WriteLine("\t" + army.GetName());
 
